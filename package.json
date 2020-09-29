@@ -11,14 +11,12 @@
     "categories": [
         "Extension Packs"
     ],
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
     "extensionPack": [
         "camel-tooling.yo",
-        "eg2.vscode-npm-script",
         "msjsdiag.debugger-for-chrome",
         "TanBen.step-line-generator"
-    ],
-    "dependencies": {
-        "@tanben/generator-nrsynthetics-workspace": "^0.1.6",
-        "yo": "^3.1.1"
-    }
+    ]
 }
